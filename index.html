@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<!-- note most of my comments are at the styling sections :) -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>RWD Assessment2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="preload" href="scripts.js" as="script" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <div>
+            <img
+            src="https://images.unsplash.com/photo-1516876437184-593fda40c7ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80.png""
+            />
+            <h1>WEBSITE LOGO</h1>
+          </div>
+
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#we-offer">We Offer</a></li>
+            <li><a href="#locations">Locations</a></li>
+          </ul>
+
+          <div class="toggle-btn">
+            <i class="fa-solid fa-burger fa-xl"></i>
+          </div>
+        </nav>
+
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#we-offer">We Offer</a></li>
+            <li><a href="#locations">Locations</a></li>
+          </ul>
+        </div>
+      </header>
+    </main>
+    <!-- note most of my comments are at the styling sections :) -->
+    <section class="our-classics" id="we-offer">
+      <h1 class="main-header">Our Classics</h1>
+      <hr class="header-underline" />
+      <div class="flex1">
+        <div>
+          <img src="assests/burger1.png" alt="image of first burger" />
+          <h3>Gourmet Truffle Burger</h3>
+
+          <p>
+            Elevate your burger experience with our Gourmet Truffle Burger, a
+            luxurious treat for the senses.
+          </p>
+        </div>
+        <div>
+          <img src="assests/burger2.png" alt="image of second burger" />
+          <h3>Sizzlin' BBQ Burger</h3>
+          <p>
+            Indulge in the mouthwatering Sizzlin' BBQ Burger, a true delight for
+            BBQ lovers! Each bite leaving you craving for more.
+          </p>
+        </div>
+        <div>
+          <img src="assests/burger3.png" alt="image of third burger" />
+          <h3>Fiery Inferno Burger</h3>
+          <p>
+            Calling all spice enthusiasts! Brace yourself for a fiery
+            masterpiece that will ignite your taste buds.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- note most of my comments are at the styling sections :) -->
+    <!-- <hr class="section-separator" /> -->
+
+    <section class="hero1">
+      <div class="hero-bg">
+        <div>
+          <h2>Introducing the Ultimate Burger Experience</h2>
+          <p>
+            Welcome to our burger paradise, where taste and quality collide. We
+            pride ourselves on crafting the perfect burger, combining
+            exceptional flavors, premium ingredients, and culinary
+            craftsmanship.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- <hr class="section-separator" /> -->
+
+    <section class="about-us" id="about-us">
+      <h1 class="main-header">About Us</h1>
+      <hr class="header-underline" />
+
+      <div class="about-div1">
+        <img
+          class="about-img1"
+          src="assests/about-us-img1.png"
+          alt="picture of person preparing burger"
+        />
+
+        <div>
+          <h3>Our Story</h3>
+          <p>
+            At [Burger Joint Name], we are passionate about one thing - crafting
+            the most incredible burgers you've ever tasted. Established with a
+            mission to redefine the burger experience, we take pride in every
+            aspect of our culinary journey, from sourcing the finest ingredients
+            to delivering exceptional flavors that leave a lasting impression.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-div2">
+        <h3>Quality Above All</h3>
+        <p>
+          At [Burger Joint Name], we believe that quality is the cornerstone of
+          an exceptional burger. We meticulously source the freshest
+          ingredients, partnering with local farmers who share our commitment to
+          sustainable and ethical practices. From the prime cuts of beef to the
+          crisp lettuce and ripe tomatoes, we select each component with care,
+          ensuring that every bite bursts with incredible flavors.
+        </p>
+        <img
+          class="about-img2"
+          src="assests/about-us-img2.png"
+          alt="image of person serving out burger"
+        />
+        <h3>Join Us on the Burger Journey</h3>
+        <p>
+          We invite you to join us on this exciting burger journey. Come and
+          experience the passion, creativity, and incredible flavors that have
+          made [Burger Joint Name] a destination for burger aficionados. Our
+          commitment to excellence and dedication to serving the best burgers in
+          town will ensure that each visit is an unforgettable experience.
+        </p>
+      </div>
+    </section>
+    <!-- note most of my comments are at the styling sections :) -->
+    <section class="locations" id="locations">
+      <h1 class="main-header">Our Locations</h1>
+      <hr class="header-underline" />
+
+      <div class="item-center">
+        <!-- you can get iframe embeds from google -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35667.321788635716!2d55.20214291208687!3d24.99559963845984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sae!4v1686139814074!5m2!1sen!2sae"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <p>
+        Visit us at any of our convenient locations and embark on a burger
+        adventure like no other. With our commitment to bringing the best
+        flavors to your neighborhood, we have carefully chosen prime spots to
+        serve our mouthwatering creations. Here's a glimpse of our current
+        locations:
+      </p>
+    </section>
+    <!-- note most of my comments are at the styling sections :) -->
+    <footer>
+      <p>CopyRights 2023 | Rei Nald Onella | No Rights Reserved</p>
+    </footer>
+
+    <!-- functionality for the hamburger bun, pressing the button makes it so it adds the class of open to .'dropdownmenu' after which the styling makes it so .open changes its display type to block and changing its height aswell so it can be interacted with  -->
+    <script>
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const toggleBtnIcon = document.querySelector(".toggle-btn i");
+      const dropdownMenu = document.querySelector(".dropdown-menu");
+
+      toggleBtn.onclick = function () {
+        dropdownMenu.classList.toggle("open");
+        const isOpen = dropdownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-sharp fa-solid fa-xmark fa-xl"
+          : "fa-solid fa-burger fa-xl";
+      };
+    </script>
+  </body>
+  <!-- note most of my comments are at the styling sections :) -->
+</html>

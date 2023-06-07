@@ -1,0 +1,574 @@
+/*these are the fonts that i decided to used or was going to use*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/*this is for the styling of the scrollbar*/
+/*this is the width of the scroll bar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+/*the background of the scrollbar*/
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 14px;
+}
+/*the the box where the scrollbar is on the page*/
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 14px;
+}
+/* when the thumb is being hovered on*/
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*makes it so when you scrol its smooth (scroll done by the other things)*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*styling for body*/
+body {
+  margin: 0;
+  background-color: #14110c;
+}
+
+/*Styles font for the whole website*/
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-style: italic;
+}
+
+/*Styles the hero at the top of page*/
+main {
+  background: url("../assests/main-bg.jpg") black;
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/*styles for the nav bar parent element, its needed to change the height of the nav bar */
+header {
+  height: 85px;
+  display: flex;
+  align-items: center;
+}
+
+/*styling for the nav(mainly used for aligning the items)*/
+nav {
+  color: white;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 75vw;
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  /*styling for the logo*/
+  img {
+    width: 45px;
+    height: 45px;
+    border-radius: 90px;
+    object-fit: cover;
+  }
+
+  /*styling for the website title on the navbar*/
+  h1 {
+    font-style: normal;
+    padding-left: 15px;
+    float: right;
+    margin: 0;
+  }
+
+  /*styling for the navbar (removes the bulletpoints)*/
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  /*styling for the navbar links (adds space between)*/
+  li {
+    padding: 10px;
+  }
+}
+
+/*styling for the navbar link text*/
+a {
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: rgb(193, 176, 77);
+  }
+}
+
+/*styling for the hamburger bun (chages the size and pointer)*/
+.toggle-btn {
+  cursor: pointer;
+  display: none;
+  font-size: 1.4rem;
+}
+
+/*styling for dropdown menu (used display none to hide it for now)*/
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 4rem;
+  top: 84px;
+  width: 300px;
+  background: rgba($color: #000000, $alpha: 0.1);
+  border: 15px;
+  backdrop-filter: blur(15px);
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/*stying for height of dropdown menu*/
+.dropdown-menu.open {
+  height: 200px;
+}
+
+/*styles for the dropdown list*/
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/*styles for the list items in dropdown*/
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+/*Styling for headers for the different sections*/
+.main-header {
+  font-size: 4.3vw;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*underlines the headers*/
+.header-underline {
+  height: 4px;
+  width: 15%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+/* our-classics section */
+
+.our-classics {
+  padding-top: 15vh;
+  height: auto;
+  width: 100%;
+  background-color: black;
+
+  /*flexbox for the our classic*/
+  .flex1 {
+    padding-top: 13vh;
+    padding-bottom: 20vh;
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+
+    /*the div is the width of the one element in our classic*/
+    div {
+      width: 33%;
+    }
+
+    img {
+      width: 60%;
+    }
+
+    h3 {
+      margin-top: 25px;
+      font-size: 1.4vw;
+    }
+
+    p {
+      font-size: 1vw;
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
+
+/*This was initially used but i decided to not use it since it didnt look good*/
+.section-separator {
+  height: 2px;
+  background: white;
+  filter: blur(2px);
+  margin: 0;
+}
+
+/*styling for hero section*/
+.hero1 {
+  width: 100%;
+  height: auto;
+  /*the background of the hero */
+  .hero-bg {
+    width: 100%;
+    height: 90vh;
+    background: url("../assests/main-bg2\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% 0;
+
+    /*positioning for the texts found in hero*/
+    div {
+      position: relative;
+      top: 30%;
+      left: 10%;
+      width: 35%;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 0 0 25px 0;
+      font-size: 2.3vw;
+    }
+
+    p {
+      font-size: 1.1vw;
+      width: 83%;
+      margin: 0 auto;
+    }
+  }
+}
+
+/*About us section*/
+.about-us {
+  padding: 13vh 0 12vh 0;
+  height: auto;
+
+  h3 {
+    font-size: 2.5vw;
+  }
+
+  p {
+    font-size: 1.1vw;
+    line-height: 2.3;
+    font-weight: 500;
+  }
+}
+
+/*splitting the about us into two div elements since this one i decided to use flex to align it*/
+.about-div1 {
+  padding-top: 12vh;
+  display: flex;
+  width: 85%;
+  margin: auto;
+
+  div {
+    padding-left: 10vw;
+    width: 50%;
+
+    p {
+      width: 60%;
+    }
+  }
+}
+
+/*styling for the first image in about us*/
+.about-img1 {
+  width: 35%;
+  border-radius: 0 20px 20px 0;
+  margin-left: 8vw;
+  box-shadow: 0.3em 0.3em 1em rgba(255, 255, 255, 0.3);
+}
+
+/*styling for about us div 2*/
+.about-div2 {
+  margin: 10vh 0 0 0;
+  text-align: center;
+
+  p {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+/*styling for about us image 2*/
+.about-img2 {
+  width: 50%;
+  margin-top: 10vh;
+  border-radius: 4px;
+  box-shadow: 0.3em 0.3em 1em rgba(255, 255, 255, 0.3);
+}
+
+/*Locations section*/
+.locations {
+  background-color: #131313;
+  height: auto;
+  padding: 12vh 0 15vh 0;
+
+  p {
+    width: 75%;
+    text-align: center;
+    margin: 6vh auto;
+    font-size: 1.1vw;
+    font-weight: 500;
+  }
+
+  /*used this to center the the iframe and the p tag*/
+  .item-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    /*positioning for the iframe (added margin)*/
+    iframe {
+      margin-top: 8vh;
+      width: 75%;
+      height: 80vh;
+    }
+  }
+}
+
+/*footer section*/
+footer {
+  height: 9vh;
+  background-color: #2b2924;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    text-align: center;
+    margin: 0;
+    font-size: 1vw;
+  }
+}
+
+/*Styling for tablet responsiveness*/
+
+@media only screen and (max-width: 1024px) {
+  /*aligning for the spacing of navbar elements*/
+  nav {
+    justify-content: space-between;
+  }
+
+  /*changes to display none since it now uses a hamburger bun*/
+  nav ul {
+    display: none;
+  }
+
+  /*chaging font size to make it bigger*/
+  .main-header {
+    font-size: 5.5vw;
+    width: 100%;
+  }
+
+  .header-underline {
+    height: 4px;
+    width: 20%;
+  }
+
+  /*it was diplay none earlier, not its display so it shown*/
+  .toggle-btn {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: block;
+  }
+
+  /*styling to make it suited for tablet sizes, change font size*/
+  .hero1 {
+    .hero-bg {
+      background-size: 100%;
+      height: 60vh;
+      background-position: center 0;
+
+      div {
+        top: 25%;
+        h2 {
+          font-size: 2.4vw;
+        }
+
+        p {
+          font-size: 1.2vw;
+        }
+      }
+    }
+  }
+
+  /*now just fine tuning the height inbetween the sections*/
+  .locations {
+    padding-top: 6vh;
+  }
+
+  footer {
+    p {
+      font-size: 1.4vw;
+    }
+  }
+
+  .about-us {
+    padding: 7vh 0 6vh 0;
+  }
+}
+
+/*Styling for phone responsiveness*/
+
+@media only screen and (max-width: 560px) {
+  body {
+    background-size: 100vh;
+    background-position: center 00%;
+  }
+
+  /*width 100 changes the dropdown to take the whole width*/
+  .dropdown-menu {
+    right: 0;
+    width: 100%;
+  }
+
+  /*change the font size and width to basically take the whole width of device now*/
+  .main-header {
+    font-size: 8.5vw;
+    width: 100%;
+  }
+
+  .header-underline {
+    height: 4px;
+    width: 30%;
+  }
+
+  /*changing the flex box width so so it suitable for phones added wrap aswell so the whole element just takes the whole width*/
+  .our-classics {
+    .flex1 {
+      width: 100%;
+      flex-wrap: wrap;
+      padding-bottom: 0;
+      div {
+        margin-bottom: 10vh;
+        width: 100%;
+
+        h3 {
+          font-size: 7vw;
+        }
+
+        p {
+          font-size: 3.9vw;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  /*this just changes the heros alignment for the text since now the image is the background so the text has to be centered */
+  .hero1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /*changing the background position for it aswell*/
+    .hero-bg {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-size: cover;
+      background-position: 5% 0;
+      div {
+        width: 90%;
+        top: 0;
+        left: 0;
+        margin: auto;
+        h2 {
+          font-size: 8.3vw;
+        }
+
+        p {
+          width: 90%;
+          font-size: 3.1vw;
+        }
+      }
+    }
+  }
+
+  /*changing the about-div 1*/
+  .about-div1 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    div {
+      position: absolute;
+      text-align: center;
+      width: 80%;
+
+      p {
+        font-size: 4vw;
+        line-height: 1.7;
+        width: 95% !important;
+      }
+    }
+  }
+
+  /*about-div 2 section */
+
+  .about-div2 {
+    width: 100%;
+    margin: auto;
+    p {
+      width: 90%;
+    }
+  }
+
+  /*change the font-sizes*/
+  .about-us {
+    h3 {
+      font-size: 7.5vw;
+    }
+
+    p {
+      margin: auto;
+      font-size: 4vw;
+    }
+  }
+
+  /*changes the image size*/
+  .about-img1 {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    filter: opacity(25%);
+  }
+  /*changes the image size*/
+  .about-img2 {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  /*changes height for the padding*/
+  .locations {
+    padding-bottom: 7vh;
+    p {
+      font-size: 2.5vw;
+    }
+  }
+
+  footer {
+    p {
+      font-size: 2vw;
+    }
+  }
+}
